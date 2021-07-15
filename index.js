@@ -1,8 +1,10 @@
-import { Client, Intents, MessageEmbed } from 'discord.js';
-import http from 'http';
-import fs from 'fs';
+const { Client, Intents, MessageEmbed } = require('discord.js');
+const http = require('http');
+const fs = require('fs');
+const tips = require('./tips.json');
 const port = process.argv[2] || 9000;
 const client = new Client({ intents: [Intents.FLAGS.GUILDS, Intents.FLAGS.GUILD_MESSAGES] });
+
 
 http.createServer(function (req, res) {
 	console.log(`${req.method} ${req.url}`);
@@ -15,7 +17,6 @@ http.createServer(function (req, res) {
 
 console.log(`Server listening on port ${port}`);
 
-const tips = require('./tips.json');
 
 client.on('ready', () => {
 	console.log(`Logged in as ${client.user.tag}!`);
