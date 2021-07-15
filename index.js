@@ -2,7 +2,7 @@ const { Client, Intents, MessageEmbed } = require('discord.js');
 const http = require('http');
 const fs = require('fs');
 const tips = require('./tips.json');
-const port = process.argv[2] || 9000;
+const port = process.env.PORT || 9000;
 const client = new Client({ intents: [Intents.FLAGS.GUILDS, Intents.FLAGS.GUILD_MESSAGES] });
 
 
