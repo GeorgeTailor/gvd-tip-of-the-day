@@ -1,0 +1,48 @@
+[
+	{
+		"title": "Знаете ли вы, что:",
+		"content": "Каждый раз, когда дочери неба приносят в жертву гоблинов, то их боевой дух возрастает на 1.\nК сожалению, навык Воздаяние не увеличивает урон от заклинания Цепная молния.",
+		"links": [
+			{
+				"title": "Жертвоприношение гоблинами",
+				"description": "https://www.heroeswm.ru/help.php?section=32#player"
+			}, 
+			{
+				"title": "Цепная молния",
+				"description": "https://daily.heroeswm.ru/help/spell.php?name=chainlighting"
+			}, 
+			{
+				"title": "Дочери неба",
+				"description": "https://daily.heroeswm.ru/help/creature.html?name=sdaughter&v=undefined"
+			}
+		]
+	},
+	{
+		"title": "Знаете ли вы, что:",
+		"content": "Паладины могут снимать повреждения доспехов (например, от шара Гнома Огня) навыком Возложение рук.",
+		"links": [
+			{
+				"title": "Возложение рук",
+				"description": "https://daily.heroeswm.ru/help/ability.html?name=layhands"
+			}, 
+			{
+				"title": "Паладины",
+				"description": "https://daily.heroeswm.ru/help/creature.html?name=paladin&v=undefined"
+			}
+		]
+	},
+	{
+		"title": "Знаете ли вы, что:",
+		"content": "Некромант (в том числе Повелитель Смерти) не может воскрешать юнитов, у которых 100% здоровья.",
+		"links": [
+			{
+				"title": "Поднятие мертвецов",
+				"description": "https://daily.heroeswm.ru/help/spell.php?name=raisedead"
+			},
+			{
+				"title": "Фракция некромант",
+				"description": "https://daily.heroeswm.ru/help/fraction.html?name=necromance"
+			}
+		]
+	}
+]
