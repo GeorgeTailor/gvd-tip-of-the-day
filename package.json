@@ -10,8 +10,5 @@
   "license": "ISC",
   "dependencies": {
     "discord.js": "^12.5.3"
-  },
-  "devDependencies": {
-    "cross-env": "^7.0.3"
   }
 }

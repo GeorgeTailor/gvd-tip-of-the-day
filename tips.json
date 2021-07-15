@@ -44,5 +44,23 @@
 				"description": "https://daily.heroeswm.ru/help/fraction.html?name=necromance"
 			}
 		]
+	},
+	{
+		"title": "Знаете ли вы, что:",
+		"content": "Заклинание Соблазнение могут рассеять только архимаги или герой с таким заклинанием в книге заклинаний.",
+		"links": [
+			{
+				"title": "Рассеивание",
+				"description": "https://daily.heroeswm.ru/help/spell.php?name=dispel"
+			},
+			{
+				"title": "Соблазнение",
+				"description": "https://daily.heroeswm.ru/help/ability.html?name=seduction&v=undefined"
+			},
+			{
+				"title": "Архимаг",
+				"description": "https://daily.heroeswm.ru/help/creature.html?name=archmage"
+			}
+		]
 	}
 ]
