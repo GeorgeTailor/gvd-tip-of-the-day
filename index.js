@@ -29,7 +29,7 @@ client.on('ready', () => {
 
 const runJob = () => {
 	const tip = tips[Math.floor(Math.random()*tips.length)];
-		const channel = client.channels.cache.find(channel => channel.name.toLowerCase() === 'модерация');
+		const channel = client.channels.cache.find(channel => channel.name.toLowerCase() === 'общий-чат');
 		channel.send(`${tip.title}\n${tip.content}`);
 
 		tip?.links.forEach(link => {
