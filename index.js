@@ -41,7 +41,7 @@ const runJob = () => {
 		});
 	setTimeout(() => {
 		runJob();
-	}, 86_400_000 / 3); // thrice per day
+	}, 86_400_000 / 4); // four times per day
 }
 
 client.on('message', message => {

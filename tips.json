@@ -121,6 +121,41 @@
 		"title": "Знаете ли вы, что:",
 		"content": "БД больше 5 не даёт ни более частого срабатывания морали, ни большего урона от Воздаяния. Удача больше 5 не даёт более частого срабатывания удачи, однако для перка Широкие врата будет работать и большее количество удачи. В случае отрицательных значений параметров удачи и БД, оба навыка будут использовать нулевые значения этих параметров.",
 		"links": []
+	},
+	{
+		"title": "Знаете ли вы, что:",
+		"content": "Навык адское пламя наносит чистый урон, единственное что может уменьшить урон от этого навыка это антиумение и бурлящая кровь. Пример, при 28 СМ наносится около 300 чистого урона.",
+		"links": [
+			{
+				"title": "Адское пламя",
+				"description": "https://daily.heroeswm.ru/help/skills.html?name=hellfire"
+			},
+			{
+				"title": "Бурлящая кровь",
+				"description": "https://daily.heroeswm.ru/help/ability.html?name=ragingblood"
+			}
+		]
+	},
+	{
+		"title": "Знаете ли вы, что:",
+		"content": "Умение невосприимчивость магии у черных драконов или зачарованный доспех у магнитных големов можно пробить используя соответсвенные артефакты, например кольца холода или накидка чародея.",
+		"links": [
+			{
+				"title": "Чёрные драконы",
+				"description": "https://daily.heroeswm.ru/help/creature.html?name=blackdragon"
+			},
+			{
+				"title": "Магнитные големы",
+				"description": "https://daily.heroeswm.ru/help/creature.html?name=magneticgolem"
+			},
+			{
+				"title": "Кольцо холода",
+				"description": "https://www.heroeswm.ru/art_info.php?id=coldring_n"
+			},
+			{
+				"title": "Накидка чародея",
+				"description": "https://www.heroeswm.ru/art_info.php?id=wiz_cape"
+			}
+		]
 	}
 ]
-
