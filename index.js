@@ -31,7 +31,7 @@ const runJob = () => {
 	// 865252270009352243 - test
 	// 864982486702227507 - общий-чат
 	const tip = tips[Math.floor(Math.random()*tips.length)];
-		const channel = client.channels.cache.get('865252270009352243');
+		const channel = client.channels.cache.get('864982486702227507');
 		channel.send(`${tip.title}\n${tip.content}`);
 
 		tip?.links.forEach(link => {
@@ -43,7 +43,7 @@ const runJob = () => {
 		});
 	setTimeout(() => {
 		runJob();
-	}, 86_400_000); // once per day
+	}, 86_400_000 / 3); // thrice per day
 }
 
 client.on('message', message => {
