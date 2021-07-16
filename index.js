@@ -20,7 +20,7 @@ console.log(`Server listening on port ${port}`);
 
 client.on('ready', () => {
 	console.log(`Logged in as ${client.user.tag}!`);
-	client.channels.cache.get('865252270009352243').send('Ready to serve.');
+	// client.channels.cache.get('865252270009352243').send('Ready to serve.');
 
 	runJob();
 });
@@ -28,10 +28,8 @@ client.on('ready', () => {
 // https://daily.heroeswm.ru/help/
 
 const runJob = () => {
-	// 865252270009352243 - test
-	// 865374337473576970 - общий-чат
 	const tip = tips[Math.floor(Math.random()*tips.length)];
-		const channel = client.channels.cache.get('865374337473576970');
+		const channel = client.channels.cache.find(channel => channel.name.toLowerCase() === 'модерация');
 		channel.send(`${tip.title}\n${tip.content}`);
 
 		tip?.links.forEach(link => {
