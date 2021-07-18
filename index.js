@@ -73,7 +73,7 @@ client.on('message', message => {
 		const req = https.request(options, res => {
 			console.log(`statusCode: ${res.statusCode}`)
 			if (res.statusCode != 302) {
-				channel.send(`Игрок с ником ${name} не существует, убедись, что ты ввел правильную информацию`);
+				message.channel.send(`Игрок с ником ${name} не существует, убедись, что ты ввел правильную информацию`);
 				return;
 			} else {
 				register(name, lvl);
