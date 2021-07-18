@@ -76,7 +76,7 @@ client.on('message', message => {
 				message.channel.send(`Игрок с ником ${name} не существует, убедись, что ты ввел правильную информацию`);
 				return;
 			} else {
-				register(name, lvl);
+				register(message, name, lvl);
 			}
 		})
 
@@ -88,7 +88,7 @@ client.on('message', message => {
 	}
 });
 
-function register(name, lvl) {
+function register(message, name, lvl) {
 	const guild = client.guilds.cache.find(g => g.name === 'Герои Войны и Денег');
 	const playerRole = guild.roles.cache.find(r => r.name === 'Игрок');
 	const lvlRole = guild.roles.cache.find(r => r.name === `Уровень: [${lvl}]`);
