@@ -47,7 +47,7 @@ const runJob = () => {
 client.on('message', message => {
 	if (message.content === '!tip') {
 		const tip = tips[Math.floor(Math.random()*tips.length)];
-		const channel = client.channels.cache.get('865252270009352243');
+		const channel = client.channels.cache.find(channel => channel.name.toLowerCase() === 'test');
 		channel.send(`${tip.title}\n${tip.content}`);
 
 		tip?.links.forEach(link => {
