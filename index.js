@@ -59,9 +59,8 @@ client.on('message', message => {
 	}
 	if (message.channel.name === 'авторизация' && message.content.startsWith('!authorize')) {
 		const userInfo = message.content.replace('!authorize ', '');
-		const nameAndLvl = userInfo.split(' ').filter(a => a);
-		const name = nameAndLvl[0];
-		const lvl = nameAndLvl[1];
+		const lvl = userInfo.substr(userInfo.lastIndexOf(' ')+1, userInfo.length);
+		const name = userInfo.substr(0, userInfo.lastIndexOf(' ')).trim();
 
 		const options = {
 			hostname: 'www.heroeswm.ru',
