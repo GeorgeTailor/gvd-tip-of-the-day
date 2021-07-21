@@ -49,13 +49,12 @@ const runJob = () => {
 // greeting
 client.on('guildMemberAdd', async member => {
 	try {
-		const channel = client.channels.cache.find(channel => channel.name.toLowerCase() === 'test');
+		const channel = client.channels.cache.find(channel => channel.name.toLowerCase() === 'авторизация');
 		channel.send(`${member.displayName} has joined the server`);
-		const dm = await member.createDM();
-		dm.send(`Привет!
-		Чтобы получить полный доступ ко всем каналам, надо зайти на канал #авторизация, и написать следующее сообщение:
+		member.send
+		channel.send(`Привет ${member}!, чтобы получить полный доступ ко всем каналам, надо на этом канале написать следующее сообщение:
 		!authorize nickname lvl
-		вместо nickname надо написать название своего персонажа в ГВД, а вместо lvl - уровень персонажа`);
+		вместо nickname надо написать название своего персонажа в ГВД, а вместо lvl - уровень персонажа.`);
 	} catch (e) {
 		console.error(e);
 	}
