@@ -46,6 +46,24 @@ const runJob = () => {
 	}, 86_400_000 / 4); // four times per day
 }
 
+// greeting
+client.on('guildMemberAdd', member => {
+	try {
+		const dm = await member.createDM();
+		dm.send(`Привет!
+		Чтобы получить полный доступ ко всем каналам, надо зайти на канал #авторизация, и написать следующее сообщение:
+		!authorize nickname lvl
+		вместо nickname надо написать название своего персонажа в ГВД, а вместо lvl - уровень персонажа`);
+	} catch (e) {
+		console.error(e);
+	}
+});
+
+client.on('guildMemberRemove', member => {
+	const channel = client.channels.cache.find(channel => channel.name.toLowerCase() === 'test');
+	channel.send(`${member.displayName} has left the server`);
+});
+
 client.on('message', message => {
 	if (message.content === '!tip') {
 		const tip = tips[Math.floor(Math.random() * tips.length)];
