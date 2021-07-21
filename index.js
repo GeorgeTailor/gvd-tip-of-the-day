@@ -4,7 +4,7 @@ const fs = require('fs');
 const https = require('https')
 const tips = require('./tips.json');
 const port = process.env.PORT || 9000;
-const client = new Client({ intents: [Intents.FLAGS.GUILDS, Intents.FLAGS.GUILD_MESSAGES] });
+const client = new Client();
 
 http.createServer(function (req, res) {
 	console.log(`${req.method} ${req.url}`);
@@ -47,11 +47,9 @@ const runJob = () => {
 }
 
 // greeting
-client.on('guildMemberAdd', async member => {
+client.on('guildMemberAdd', member => {
 	try {
 		const channel = client.channels.cache.find(channel => channel.name.toLowerCase() === 'авторизация');
-		channel.send(`${member.displayName} has joined the server`);
-		member.send
 		channel.send(`Привет ${member}!, чтобы получить полный доступ ко всем каналам, надо на этом канале написать следующее сообщение:
 		!authorize nickname lvl
 		вместо nickname надо написать название своего персонажа в ГВД, а вместо lvl - уровень персонажа.`);
