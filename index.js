@@ -1,10 +1,10 @@
-const { Client, MessageEmbed } = require('discord.js');
+const { Client, Intents, MessageEmbed } = require('discord.js');
 const http = require('http');
 const fs = require('fs');
 const https = require('https')
 const tips = require('./tips.json');
 const port = process.env.PORT || 9000;
-const client = new Client();
+const client = new Client({ intents: [Intents.FLAGS.GUILDS, Intents.FLAGS.GUILD_MESSAGES, Intents.FLAGS.GUILD_MEMBERS] });
 
 http.createServer(function (req, res) {
 	console.log(`${req.method} ${req.url}`);
@@ -24,7 +24,7 @@ console.log(`Server listening on port ${port}`);
 
 client.on('ready', () => {
 	console.log(`Logged in as ${client.user.tag}!`);
-	setTimeout(() => runJob(), 100);
+	runJob();
 });
 
 // https://daily.heroeswm.ru/help/
@@ -52,7 +52,7 @@ client.on('guildMemberAdd', member => {
 		const channel = client.channels.cache.find(channel => channel.name.toLowerCase() === 'авторизация');
 		channel.send(`Привет ${member}!, чтобы получить полный доступ ко всем каналам, надо на этом канале написать следующее сообщение:
 		!authorize nickname lvl
-		вместо nickname надо написать название своего персонажа в ГВД, а вместо lvl - уровень персонажа.`);
+вместо nickname надо написать название своего персонажа в ГВД, а вместо lvl - уровень персонажа.`);
 	} catch (e) {
 		console.error(e);
 	}
