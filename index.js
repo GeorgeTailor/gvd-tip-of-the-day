@@ -47,7 +47,7 @@ const runJob = () => {
 }
 
 // greeting
-client.on('guildMemberAdd', member => {
+client.on('guildMemberAdd', async member => {
 	try {
 		const dm = await member.createDM();
 		dm.send(`Привет!
