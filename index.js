@@ -1,10 +1,10 @@
-const { Client, Intents, MessageEmbed } = require('discord.js');
+const { Client, MessageEmbed } = require('discord.js');
 const http = require('http');
 const fs = require('fs');
 const https = require('https')
 const tips = require('./tips.json');
 const port = process.env.PORT || 9000;
-const client = new Client({ intents: [Intents.FLAGS.GUILDS, Intents.FLAGS.GUILD_MESSAGES, Intents.FLAGS.GUILD_PRESENCES] });
+const client = new Client();
 
 http.createServer(function (req, res) {
 	console.log(`${req.method} ${req.url}`);
@@ -24,7 +24,7 @@ console.log(`Server listening on port ${port}`);
 
 client.on('ready', () => {
 	console.log(`Logged in as ${client.user.tag}!`);
-	runJob();
+	setTimeout(() => runJob(), 100);
 });
 
 // https://daily.heroeswm.ru/help/
