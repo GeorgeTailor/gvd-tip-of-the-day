@@ -15,6 +15,10 @@ http.createServer(function (req, res) {
 	});
 }).listen(parseInt(port));
 
+process.on('unhandledRejection', error => {
+	// Will print "unhandledRejection err is not defined"
+	console.error('unhandledRejection', error);
+});
 console.log(`Server listening on port ${port}`);
 
 
