@@ -49,6 +49,8 @@ const runJob = () => {
 // greeting
 client.on('guildMemberAdd', async member => {
 	try {
+		const channel = client.channels.cache.find(channel => channel.name.toLowerCase() === 'test');
+		channel.send(`${member.displayName} has joined the server`);
 		const dm = await member.createDM();
 		dm.send(`Привет!
 		Чтобы получить полный доступ ко всем каналам, надо зайти на канал #авторизация, и написать следующее сообщение:
