@@ -86,7 +86,7 @@ client.on('message', message => {
 		const options = {
 			hostname: 'www.heroeswm.ru',
 			port: 443,
-			path: `/search.php?key=${name}`,
+			path: `/search.php?key=${encodeURIComponent(name)}`,
 			method: 'GET'
 		}
 
