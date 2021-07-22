@@ -63,7 +63,7 @@ client.on('guildMemberRemove', member => {
 	channel.send(`${member.displayName} has left the server`);
 });
 
-client.on('message', message => {
+client.on('message', async message => {
 	if (message.content === '!tip') {
 		const tip = tips[Math.floor(Math.random() * tips.length)];
 		const channel = client.channels.cache.find(channel => channel.name.toLowerCase() === 'test');
@@ -83,44 +83,45 @@ client.on('message', message => {
 		const lvl = userInfo.substr(userInfo.lastIndexOf(' ')+1, userInfo.length);
 		const name = userInfo.substr(0, userInfo.lastIndexOf(' ')).trim();
 
-		const options = {
-			hostname: 'www.heroeswm.ru',
-			port: 443,
-			path: `/search.php?key=${encodeURIComponent(name)}`,
-			method: 'GET'
+		try {
+			await register(message, name, lvl);
+		} catch (e) {
+			message.channel.send(`Что-то пошло не так, убедись, что ты ввел правильную информацию`);
 		}
 
-		const req = https.request(options, res => {
-			console.log(`statusCode: ${res.statusCode}`)
-			if (res.statusCode != 302) {
-				message.channel.send(`Игрок с ником ${name} не существует, убедись, что ты ввел правильную информацию`);
-				return;
-			} else {
-				register(message, name, lvl);
-			}
-		})
+		// HWM uses some strange encoding of cyryllic characters
+		// TODO fix this
+		// const options = {
+		// 	hostname: 'www.heroeswm.ru',
+		// 	port: 443,
+		// 	path: `/search.php?key=${encodeURIComponent(name)}`,
+		// 	method: 'GET'
+		// }
 
-		req.on('error', error => {
-			console.error(error)
-		})
+		// const req = https.request(options, res => {
+		// 	console.log(`statusCode: ${res.statusCode}`)
+		// 	if (res.statusCode != 302) {
+		// 		message.channel.send(`Игрок с ником ${name} не существует, убедись, что ты ввел правильную информацию`);
+		// 		return;
+		// 	} else {
+		// 		register(message, name, lvl);
+		// 	}
+		// })
 
-		req.end()
+		// req.on('error', error => {
+		// 	console.error(error)
+		// })
+
+		// req.end()
 	}
 });
 
-function register(message, name, lvl) {
+async function register(message, name, lvl) {
 	const guild = client.guilds.cache.find(g => g.name === 'Герои Войны и Денег');
 	const playerRole = guild.roles.cache.find(r => r.name === 'Игрок');
 	const lvlRole = guild.roles.cache.find(r => r.name === `Уровень: [${lvl}]`);
-	message.member.setNickname(name)
-		.catch(e => {
-			channel.send(`${name} что-то пошло не так, убедись, что ты ввел правильную информацию`);
-			console.error(e);
-		});
-	message.member.roles.add([playerRole, lvlRole])
-		.catch(e => {
-			console.error(e);
-		});
+	await message.member.roles.add([playerRole, lvlRole])
+	await message.member.setNickname(name)
 }
 
 client.login(process.env.BOT_TOKEN);
