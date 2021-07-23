@@ -43,7 +43,7 @@ const runJob = () => {
 	});
 	setTimeout(() => {
 		runJob();
-	}, 86_400_000 / 4); // four times per day
+	}, 86_400_000); // four times per day
 }
 
 // greeting
