@@ -103,7 +103,7 @@ client.on('message', async message => {
 			method: 'GET'
 		}
 
-		const req = https.request(options, res => {
+		const req = https.request(options, async res => {
 			console.log(`statusCode: ${res.statusCode}`)
 			if (res.statusCode != 302) {
 				message.channel.send(`${message.member}, игрок с ником ${name} не существует, убедись, что ты ввел правильную информацию`);
