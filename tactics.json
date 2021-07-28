@@ -1,0 +1,152 @@
+{
+	"13": {
+		"рыцарь": [
+			{
+				"name": "Misantrophe",
+				"link": "https://daily.heroeswm.ru/gt/battle/id/7598916/lvl/13/r/1"
+			}
+		],
+		"рс": [
+			{
+				"name": "Misantrophe",
+				"link": "https://daily.heroeswm.ru/gt/battle/id/7598916/lvl/13/r/101"
+			}
+		],
+		"эльф": [
+			{
+				"name": "КровавыйОладушек",
+				"link": "https://daily.heroeswm.ru/gt/battle/id/7358798/lvl/13/r/4"
+			}
+		],
+		"эз": [
+			{
+				"name": "КровавыйОладушек",
+				"link": "https://daily.heroeswm.ru/gt/battle/id/7358798/lvl/13/r/104"
+			}
+		],
+		"тэ": [
+			{
+				"name": "Серук-",
+				"link": "https://daily.heroeswm.ru/gt/battle/id/3509699/r/6"
+			},
+			{
+				"name": "игрок 7",
+				"link": "https://daily.heroeswm.ru/gt/battle/id/7357281/lvl/13/r/6"
+			}
+		],
+		"тэу": [
+			{
+				"name": "Серук-",
+				"link": "https://daily.heroeswm.ru/gt/battle/id/3509699/r/106"
+			}
+		],
+		"некромант": [
+			{
+				"name": "Fatall-",
+				"link": "https://daily.heroeswm.ru/gt/battle/id/7319284/lvl/13/r/2"
+			}
+		],
+		"нпс": [
+			{
+				"name": "Fatall-",
+				"link": "https://daily.heroeswm.ru/gt/battle/id/7319284/lvl/13/r/102"
+			}
+		],
+		"демон": [
+			{
+				"name": "Кутюрье",
+				"link": "https://daily.heroeswm.ru/gt/battle/id/7237719/lvl/13/r/7"
+			}
+		],
+		"дт": [
+			{
+				"name": "Кутюрье",
+				"link": "https://daily.heroeswm.ru/gt/battle/id/7237719/lvl/13/r/107"
+			},
+			{
+				"name": "-Лояльный-",
+				"link": "https://daily.heroeswm.ru/gt/battle/id/7519909/lvl/13/r/107/l/1"
+			}
+		],
+		"гном": [
+			{
+				"name": "BABA GNOM",
+				"link": "https://daily.heroeswm.ru/gt/battle/id/7340739/lvl/13/r/8"
+			}
+		],
+		"го": [
+			{
+				"name": "ChuckSchuldiner",
+				"link": "https://daily.heroeswm.ru/gt/battle/id/5846119/lvl/13/r/108"
+			}
+		],
+		"св": [
+			{
+				"name": "fit",
+				"link": "https://daily.heroeswm.ru/gt/battle/id/6984924/lvl/13/r/9"
+			},
+			{
+				"name": "ChuckSchuldiner",
+				"link": "https://daily.heroeswm.ru/gt/battle/id/5846119/lvl/13/r/9"
+			}
+		]
+	},
+	"14": {
+		"рыцарь": [
+			{
+				"name": "Misantrophe",
+				"link": "https://daily.heroeswm.ru/gt/battle/id/7598916/lvl/14/r/1"
+			}
+		],
+		"рс": [
+			{
+				"name": "Misantrophe",
+				"link": "https://daily.heroeswm.ru/gt/battle/id/7598916/lvl/14/r/101"
+			}
+		],
+		"тэ": [
+			{
+				"name": "игрок 7",
+				"link": "https://daily.heroeswm.ru/gt/battle/id/7357281/lvl/14/r/6"
+			}
+		],
+		"некромант": [
+			{
+				"name": "Fatall-",
+				"link": "https://daily.heroeswm.ru/gt/battle/id/7319284/lvl/14/r/2"
+			}
+		],
+		"нпс": [
+			{
+				"name": "Fatall-",
+				"link": "https://daily.heroeswm.ru/gt/battle/id/7319284/lvl/14/r/102"
+			}
+		],
+		"гном": [
+			{
+				"name": "BABA GNOM",
+				"link": "https://daily.heroeswm.ru/gt/battle/id/7340739/lvl/14/r/8"
+			}
+		],
+		"го": [
+			{
+				"name": "ChuckSchuldiner",
+				"link": "https://daily.heroeswm.ru/gt/battle/id/7340739/lvl/14/r/108"
+			}
+		],
+		"св": [
+			{
+				"name": "fit",
+				"link": "https://daily.heroeswm.ru/gt/battle/id/6984924/lvl/14/r/9"
+			}
+		]
+	},
+	"15": {
+		"св": [
+			{
+				"name": "fit",
+				"link": "https://daily.heroeswm.ru/gt/battle/id/6984924/lvl/15/r/9"
+			}
+		]
+	}
+}
