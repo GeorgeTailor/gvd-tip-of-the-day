@@ -1,15 +1,83 @@
 {
+	"10": {
+		"рыцарь": [
+			{
+				"name": "имперский_дух",
+				"link": "https://daily.heroeswm.ru/gt/battle/id/6809234/lvl/10/r/1"
+			}
+		],
+		"рс": [
+			{
+				"name": "имперский_дух",
+				"link": "https://daily.heroeswm.ru/gt/battle/id/6809234/lvl/10/r/101"
+			}
+		],
+		"маг": [
+			{
+				"name": "DOL-P-HIN",
+				"link": "https://daily.heroeswm.ru/gt/battle/id/7328157/lvl/10/r/3"
+			}
+		]
+	},
+	"11": {
+		"рыцарь": [
+			{
+				"name": "имперский_дух",
+				"link": "https://daily.heroeswm.ru/gt/battle/id/6809234/lvl/11/r/1"
+			}
+		],
+		"рс": [
+			{
+				"name": "имперский_дух",
+				"link": "https://daily.heroeswm.ru/gt/battle/id/6809234/lvl/11/r/101"
+			}
+		],
+		"маг": [
+			{
+				"name": "DOL-P-HIN",
+				"link": "https://daily.heroeswm.ru/gt/battle/id/7328157/lvl/11/r/3"
+			}
+		]
+	},
+	"12": {
+		"рыцарь": [
+			{
+				"name": "имперский_дух",
+				"link": "https://daily.heroeswm.ru/gt/battle/id/6809234/lvl/12/r/1"
+			}
+		],
+		"рс": [
+			{
+				"name": "имперский_дух",
+				"link": "https://daily.heroeswm.ru/gt/battle/id/6809234/lvl/12/r/101"
+			}
+		],
+		"маг": [
+			{
+				"name": "DOL-P-HIN",
+				"link": "https://daily.heroeswm.ru/gt/battle/id/7328157/lvl/12/r/3"
+			}
+		]
+	},
 	"13": {
 		"рыцарь": [
 			{
 				"name": "Misantrophe",
 				"link": "https://daily.heroeswm.ru/gt/battle/id/7598916/lvl/13/r/1"
+			},
+			{
+				"name": "имперский_дух",
+				"link": "https://daily.heroeswm.ru/gt/battle/id/6809234/lvl/13/r/1"
 			}
 		],
 		"рс": [
 			{
 				"name": "Misantrophe",
 				"link": "https://daily.heroeswm.ru/gt/battle/id/7598916/lvl/13/r/101"
+			},
+			{
+				"name": "имперский_дух",
+				"link": "https://daily.heroeswm.ru/gt/battle/id/6809234/lvl/13/r/101"
 			}
 		],
 		"эльф": [
@@ -96,12 +164,20 @@
 			{
 				"name": "Misantrophe",
 				"link": "https://daily.heroeswm.ru/gt/battle/id/7598916/lvl/14/r/1"
+			},
+			{
+				"name": "имперский_дух",
+				"link": "https://daily.heroeswm.ru/gt/battle/id/6809234/lvl/14/r/1"
 			}
 		],
 		"рс": [
 			{
 				"name": "Misantrophe",
 				"link": "https://daily.heroeswm.ru/gt/battle/id/7598916/lvl/14/r/101"
+			},
+			{
+				"name": "имперский_дух",
+				"link": "https://daily.heroeswm.ru/gt/battle/id/6809234/lvl/14/r/101"
 			}
 		],
 		"тэ": [
@@ -142,10 +218,36 @@
 		]
 	},
 	"15": {
+		"рыцарь": [
+			{
+				"name": "имперский_дух",
+				"link": "https://daily.heroeswm.ru/gt/battle/id/6809234/lvl/15/r/1"
+			}
+		],
+		"рс": [
+			{
+				"name": "имперский_дух",
+				"link": "https://daily.heroeswm.ru/gt/battle/id/6809234/lvl/15/r/101"
+			}
+		],
 		"св": [
 			{
 				"name": "fit",
 				"link": "https://daily.heroeswm.ru/gt/battle/id/6984924/lvl/15/r/9"
+			}
+		]
+	},
+	"16": {
+		"рыцарь": [
+			{
+				"name": "имперский_дух",
+				"link": "https://daily.heroeswm.ru/gt/battle/id/6809234/lvl/16/r/1"
+			}
+		],
+		"рс": [
+			{
+				"name": "имперский_дух",
+				"link": "https://daily.heroeswm.ru/gt/battle/id/6809234/lvl/16/r/101"
 			}
 		]
 	}

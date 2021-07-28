@@ -128,10 +128,13 @@ client.on('message', async message => {
 		const info = message.content.replace('!билд ', '');
 		const lvl = info.substr(info.lastIndexOf(' ') + 1, info.length);
 		const fraction = info.substr(0, info.lastIndexOf(' ')).trim();
+		if (!lvl || !fraction) {
+			message.channel.send(`${message.member}, что-то пошло не так, убедись, что ты ввел правильную информацию`);
+		}
 		try {
 			sendMessageAboutLvlAndFraction(message, fraction, lvl);
 		} catch (e) {
-			message.member.send('Что-то пошло не так, убедись, что ты ввел правильную информацию');
+			message.channel.send(`${message.member}, что-то пошло не так, убедись, что ты ввел правильную информацию`);
 		}
 	}
 });
@@ -208,6 +211,9 @@ async function sendMessageAboutLvlAndFraction(message, fraction, lvl) {
 		case 'фара':
 			fractionNormalized = 'фараон';
 			break;
+		default:
+			message.channel.send(`${message.member}, фракция не найдена.`);
+			return;
 	}
 	const info = tactics[lvl][fractionNormalized];
 	if (info) {
