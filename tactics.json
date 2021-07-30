@@ -17,6 +17,18 @@
 				"name": "DOL-P-HIN",
 				"link": "https://daily.heroeswm.ru/gt/battle/id/7328157/lvl/10/r/3"
 			}
+		],
+		"дт": [
+			{
+				"name": "The power",
+				"link": "https://daily.heroeswm.ru/gt/battle/id/6622544/lvl/10/r/107"
+			}
+		],
+		"демон": [
+			{
+				"name": "The power",
+				"link": "https://daily.heroeswm.ru/gt/battle/id/6622544/lvl/10/r/7"
+			}
 		]
 	},
 	"11": {
@@ -37,6 +49,18 @@
 				"name": "DOL-P-HIN",
 				"link": "https://daily.heroeswm.ru/gt/battle/id/7328157/lvl/11/r/3"
 			}
+		],
+		"дт": [
+			{
+				"name": "The power",
+				"link": "https://daily.heroeswm.ru/gt/battle/id/6622544/lvl/11/r/107"
+			}
+		],
+		"демон": [
+			{
+				"name": "The power",
+				"link": "https://daily.heroeswm.ru/gt/battle/id/6622544/lvl/11/r/7"
+			}
 		]
 	},
 	"12": {
@@ -56,6 +80,18 @@
 			{
 				"name": "DOL-P-HIN",
 				"link": "https://daily.heroeswm.ru/gt/battle/id/7328157/lvl/12/r/3"
+			}
+		],
+		"дт": [
+			{
+				"name": "The power",
+				"link": "https://daily.heroeswm.ru/gt/battle/id/6622544/lvl/12/r/107"
+			}
+		],
+		"демон": [
+			{
+				"name": "The power",
+				"link": "https://daily.heroeswm.ru/gt/battle/id/6622544/lvl/12/r/7"
 			}
 		]
 	},
@@ -95,7 +131,7 @@
 		"тэ": [
 			{
 				"name": "Серук-",
-				"link": "https://daily.heroeswm.ru/gt/battle/id/3509699/r/6"
+				"link": "https://daily.heroeswm.ru/gt/battle/id/3509699/lvl/13/r/6"
 			},
 			{
 				"name": "игрок 7",
@@ -105,7 +141,7 @@
 		"тэу": [
 			{
 				"name": "Серук-",
-				"link": "https://daily.heroeswm.ru/gt/battle/id/3509699/r/106"
+				"link": "https://daily.heroeswm.ru/gt/battle/id/3509699/lvl/13/r/106"
 			}
 		],
 		"некромант": [
@@ -124,6 +160,10 @@
 			{
 				"name": "Кутюрье",
 				"link": "https://daily.heroeswm.ru/gt/battle/id/7237719/lvl/13/r/7"
+			},
+			{
+				"name": "The power",
+				"link": "https://daily.heroeswm.ru/gt/battle/id/6622544/lvl/13/r/7"
 			}
 		],
 		"дт": [
@@ -133,7 +173,11 @@
 			},
 			{
 				"name": "-Лояльный-",
-				"link": "https://daily.heroeswm.ru/gt/battle/id/7519909/lvl/13/r/107/l/1"
+				"link": "https://daily.heroeswm.ru/gt/battle/id/7519909/lvl/13/r/107"
+			},
+			{
+				"name": "The power",
+				"link": "https://daily.heroeswm.ru/gt/battle/id/6622544/lvl/13/r/107"
 			}
 		],
 		"гном": [
@@ -184,6 +228,16 @@
 			{
 				"name": "игрок 7",
 				"link": "https://daily.heroeswm.ru/gt/battle/id/7357281/lvl/14/r/6"
+			},
+			{
+				"name": "Серук-",
+				"link": "https://daily.heroeswm.ru/gt/battle/id/3509699/lvl/14/r/6"
+			}
+		],
+		"тэу": [
+			{
+				"name": "Серук-",
+				"link": "https://daily.heroeswm.ru/gt/battle/id/3509699/lvl/14/r/106"
 			}
 		],
 		"некромант": [
@@ -215,6 +269,18 @@
 				"name": "fit",
 				"link": "https://daily.heroeswm.ru/gt/battle/id/6984924/lvl/14/r/9"
 			}
+		],
+		"демон": [
+			{
+				"name": "The power",
+				"link": "https://daily.heroeswm.ru/gt/battle/id/6622544/lvl/14/r/7"
+			}
+		],
+		"дт": [
+			{
+				"name": "The power",
+				"link": "https://daily.heroeswm.ru/gt/battle/id/6622544/lvl/14/r/7"
+			}
 		]
 	},
 	"15": {
@@ -234,6 +300,18 @@
 			{
 				"name": "fit",
 				"link": "https://daily.heroeswm.ru/gt/battle/id/6984924/lvl/15/r/9"
+			}
+		],
+		"демон": [
+			{
+				"name": "The power",
+				"link": "https://daily.heroeswm.ru/gt/battle/id/6622544/lvl/15/r/7"
+			}
+		],
+		"дт": [
+			{
+				"name": "The power",
+				"link": "https://daily.heroeswm.ru/gt/battle/id/6622544/lvl/15/r/7"
 			}
 		]
 	},
