@@ -182,5 +182,20 @@
 				"description": "https://daily.heroeswm.ru/help/information/articles/cerberus.htm"
 			}
 		]
+	},
+	{
+		"title": "Знаете ли вы, что:",
+		"content": "Нежить невосприимчива к умению \"Соблазнение\" искусительниц, \"Ослепление\" единорогов, \"Отравление\" лазутчиков, пауков итд",
+		"links": []
+	},
+	{
+		"title": "Таблицы умений, антиумений и гильдий",
+		"content": "",
+		"links": [
+			{
+				"title": "Таблицы",
+				"description": "https://daily.heroeswm.ru/n/Skills_WG_AG"
+			}
+		]
 	}
 ]
